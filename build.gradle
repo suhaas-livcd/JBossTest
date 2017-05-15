@@ -1,0 +1,20 @@
+group 'com.suhaasatwork.com'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //undertow
+    compile group: 'io.undertow', name: 'undertow-core', version: '1.4.0.CR3'
+    compile group: 'io.undertow', name: 'undertow-servlet', version: '1.4.0.CR3'
+    //log4j2.X
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.8'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.8'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
